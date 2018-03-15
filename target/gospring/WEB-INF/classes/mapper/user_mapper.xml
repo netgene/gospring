@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gavin.dao.UserDAO">
+
+    <select id="getUser" parameterType="com.gavin.model.User" resultType="com.gavin.model.User">
+        SELECT * FROM user_info where loginid = #{loginid} and password = #{password}
+    </select>
+
+    <select id="findAll" resultType="com.gavin.model.User">
+        SELECT * FROM user_info
+    </select>
+</mapper>

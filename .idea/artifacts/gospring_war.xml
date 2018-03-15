@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gospring:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gospring.war">
+      <element id="artifact" artifact-name="gospring:war exploded" />
+    </root>
+  </artifact>
+</component>
